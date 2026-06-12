@@ -4,6 +4,7 @@
 # 1. Знакомство
 # запрашиваем имя
 user_name = input('Представьтесь, пожалуйста? ')
+user_name_title = user_name.title()
 # запрашиваем возраст
 user_age = int(input('Сколько вам лет? '))
 
@@ -25,7 +26,7 @@ water_needed = round(user_weight * WATER_PER_KG_ML / 1_000, 1)
 
 
 # 4. Вывод красивого результата
-print(f'Расчёт для пользователя, {user_name.title()}, возраст: {user_age} лет')
+print(f'Расчёт для пользователя: {user_name_title}, возраст: {user_age} лет')
 print(f'Индекс Массы Тела: {bmi}')
 print(f'Ваша ежедневная норма воды: {water_needed} л.')
 print("Расчет окончен. Будьте здоровы!")
